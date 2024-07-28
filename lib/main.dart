@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:islami_app/Home/HomeScreen.dart';
 import 'package:islami_app/Home/Tab/SebhaScreen.dart';
 import 'package:islami_app/hadeth_details.dart';
+import 'package:islami_app/splash_screen.dart';
 import 'package:islami_app/sura_details.dart';
 import 'package:provider/provider.dart';
 
@@ -47,8 +48,9 @@ class myApp extends StatelessWidget {
       themeMode: pro.appTheme,
       theme: MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: {
+        SplashScreen.routeName:(context)=>SplashScreen(),
         HomeScreen.routeName:(context)=>HomeScreen(),
         Sebhascreen.routeName:(context)=>Sebhascreen(),
         SuraDetails.routeName:(context)=>SuraDetails(),
